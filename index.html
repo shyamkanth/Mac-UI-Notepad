@@ -217,7 +217,7 @@
     <script>
         var code = document.getElementById("code");
       
-        code.addEventListener("paste", function(e) {
+        code.addEventListener("paste", function(e){
           e.preventDefault();
           var text = e.clipboardData.getData("text/plain");
           document.execCommand("insertText", false, text);
