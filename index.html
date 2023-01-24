@@ -231,7 +231,7 @@
                 html2canvas(TARGETDIV,{devicePixelRatio: 2,allowTaint: true,useCORS: true,scale:2}).then(canvas => {
                     const screenshot = canvas.toDataURL('image/jpeg');
                     const link = document.createElement('a');
-                    link.download = 'screenshot.png';
+                    link.download = 'screenshot.jpeg';
                     link.href = screenshot;
                     link.click();
                 });
